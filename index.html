@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Khushi 🤍</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(-45deg, #f5efe6, #f8f4ec, #f3e9dd, #f6f1e8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #3e3e3e;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px 28px;
+    border: none;
+    background-color: #d8c3a5;
+    color: #3e3e3e;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c5ad8e;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="page1">
+    <h1>Khushi 🤍</h1>
+    <p>Tonight, I just want you to read something from my heart.</p>
+    <button onclick="nextPage('page1','page2')">Read</button>
+</div>
+
+<div id="page2" class="hidden">
+
+<p>
+With all sincerity in my heart for you Khushi, I promise to love you in ways that make you feel safe and steady.
+</p>
+
+<p>I promise to stand beside you with loyalty, not just words.</p>
+
+<p>Like the prince in old novels, I promise you my patience, devotion, strength, and support.</p>
+
+<p>Long after the excitement fades — though I’ll try ki kabhi fade hi na ho — I promise to hold your hand with the same warmth I hold it now.</p>
+
+<p>Your peace, your happiness, and you will always matter to me. I promise to protect them.</p>
+
+<p>On your hardest days, I promise to be your calm.</p>
+
+<p>Under every circumstance, I promise honesty with my whole heart.</p>
+
+<p>Before anger ever touches my tongue, I promise to choose respect.</p>
+
+<p>Even across distance, I promise consistency and effort.</p>
+
+<p>My love for you will never be loud and careless; it will be deep and intentional.</p>
+
+<p>I promise to grow into a man you feel proud to call yours.</p>
+
+<p>No matter how busy life becomes, I promise to make time for you… for us.</p>
+
+<p>Every version of you will be loved — your strength, your softness, your silence.</p>
+
+<p>Forever is not a word I use lightly. When I say it, I promise to mean it.</p>
+
+<p>On ordinary days, I promise to choose you without needing a reason.</p>
+
+<p>Respect will always be the foundation of my love.</p>
+
+<p>Even when misunderstandings happen, I promise patience.</p>
+
+<p>Very gently, I promise to never make you feel alone.</p>
+
+<p>Every dream I chase will carry your name in it — <span style="font-family: 'Great Vibes'; font-size: 26px;">Khushi</span>.</p>
+
+<p>Right now and always, I promise loyalty.</p>
+
+<p>When distance tests us, my heart will not waver.</p>
+
+<p>My efforts will always speak louder than my promises. And if I ever hurt you, give me a chance to improve.</p>
+
+<p>Love with me will be steady — not temporary, but permanent.</p>
+
+<p>Life may change, but my intentions toward you will remain pure.</p>
+
+<p>You are not a phase in my life. Tu meri priority hai.</p>
+
+<p>Once I commit, I stay committed — that’s who I am.</p>
+
+<p>Until my last breath, I promise care, respect, and devotion.</p>
+
+<p>My future plans already make space for you.</p>
+
+<p>All that I build, I build with you in mind.</p>
+
+<p>I promise to become the right man for you.</p>
+
+<p>My heart has chosen you seriously.</p>
+
+<p>You will always be cherished, never taken for granted.</p>
+
+<p>My arms will always feel like home — open and warm.</p>
+
+<p>Every sunrise of my life, I promise I’ll smile seeing your notification.</p>
+
+<p>I promise to love you in a way that feels sacred, never scary.</p>
+
+<p>Heart in hand, I promise transparency.</p>
+
+<p>Under my protection, you will feel secure, never controlled — because you are the lady boss.</p>
+
+<p>Step by step, I promise to build a lifetime bond with you.</p>
+
+<p>Honor, respect, and tenderness will define my love.</p>
+
+<p>When I say forever… I mean forever.</p>
+
+<button onclick="nextPage('page2','page3')">Continue</button>
+
+</div>
+
+<div id="page3" class="hidden">
+    <p style="font-size:22px;">Will you promise me one thing?</p>
+    <button onclick="nextPage('page3','page4')">Promise</button>
+    <br><br>
+    <button onclick="alert('Take your time 🤍')">Not Yet</button>
+</div>
+
+<div id="page4" class="hidden">
+    <p>Then bring a pen and paper.</p>
+    <p>I’ll tell you what to write.</p>
+    <p style="margin-top:40px;">— R</p>
+</div>
+
+</div>
+
+<script>
+function nextPage(current, next) {
+    document.getElementById(current).classList.add("hidden");
+    document.getElementById(next).classList.remove("hidden");
+    window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
